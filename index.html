@@ -1,0 +1,91 @@
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="all.css" rel="stylesheet">
+
+<style>
+    #bob{
+        font-size: 6em;
+    color: white;
+    position: absolute;
+    padding-left: 1em;
+    bottom: 1em;
+    }
+</style>
+</head>
+
+<body id="main">
+    <div id="bob" contenteditable>Messages:</div>
+    <div id="shell" class="wrap">
+        <div class="alt-text">
+            <div class="message">
+                <div class="message-content">
+                    <div class="spinner-box">
+                        <div class="s-spinner klspinner"><i class="fa fa-cloud"></i></div>
+                        <div class="s-spin-text text-wrap"> <span class="char1"><i class="fa fa-user"></i></span> <span
+                                class="char2"><i class="fa fa-cogs"></i></span> <span class="char3"><i
+                                    class="fa fa-wrench"></i></span> <span class="char4"><i
+                                    class="fa fa-file"></i></span> </div>
+                        <div class="s-dummy klspinner"></div>
+                        <div class="s-dummy-text text-wrap"> <span class="char1"><i class="fa fa-user"></i></span> <span
+                                class="char2"><i class="fa fa-cogs"></i></span> <span class="char3"><i
+                                    class="fa fa-wrench"></i></span> <span class="char4"><i
+                                    class="fa fa-file"></i></span> </div>
+                        <div class="m-spinner klspinner"></div>
+                        <div class="m-spin-text text-wrap"> <span class="char1"><i class="fa fa-user"></i></span> <span
+                                class="char2"><i class="fa fa-cogs"></i></span> <span class="char3"><i
+                                    class="fa fa-wrench"></i></span> <span class="char4"><i
+                                    class="fa fa-file"></i></span> <span class="char5"><i
+                                    class="fa fa-suitcase"></i></span> </div>
+                        <div class="m-dummy klspinner"></div>
+                        <div class="m-dummy-text text-wrap"> <span class="char1"><i class="fa fa-user"></i></span> <span
+                                class="char2"><i class="fa fa-cogs"></i></span> <span class="char3"><i
+                                    class="fa fa-wrench"></i></span> <span class="char4"><i
+                                    class="fa fa-file"></i></span> <span class="char5"><i
+                                    class="fa fa-suitcase"></i></span> </div>
+                        <div class="l-spinner klspinner"></div>
+                        <div class="l-spin-text text-wrap"> <span class="char1"><i class="fa fa-user"></i></span> <span
+                                class="char2"><i class="fa fa-cogs"></i></span> <span class="char3"><i
+                                    class="fa fa-wrench"></i></span> <span class="char4"><i
+                                    class="fa fa-file"></i></span> <span class="char5"><i
+                                    class="fa fa-suitcase"></i></span> <span class="char6"><i
+                                    class="fa fa-calendar"></i></span> </div>
+                        <div class="l-dummy klspinner"></div>
+                        <div class="l-dummy-text text-wrap"> <span class="char1"><i class="fa fa-user"></i></span> <span
+                                class="char2"><i class="fa fa-cogs"></i></span> <span class="char3"><i
+                                    class="fa fa-wrench"></i></span> <span class="char4"><i
+                                    class="fa fa-file"></i></span> <span class="char5"><i
+                                    class="fa fa-suitcase"></i></span> <span class="char6"><i
+                                    class="fa fa-calendar"></i></span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    const div = document.getElementById("bob");
+
+// Save value on input change  
+div.addEventListener("input", () => {
+  localStorage.setItem("divValue", div.innerText);
+});
+
+// On page load, set value from localStorage if exists
+window.addEventListener("load", () => {
+  const storedValue = localStorage.getItem("divValue"); 
+  if (storedValue) {
+    div.innerText = storedValue;
+  }
+});
+</script>
+</body>
+
+</html>
