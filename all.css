@@ -188,7 +188,7 @@
 
 .m-spin-text span,
 .m-dummy-text span {
-    padding-top: 2.2em;
+    padding-top: 2.4em;
 }
 
 .s-spinner,
@@ -1958,43 +1958,16 @@
 
 .wrap .alt-text .message .message-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin: auto;
     width: 12em;
     height: 1em;
-}
-
-@media only screen and (max-width: 730px) {
-    .wrap .alt-text .message .message-content {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        width: 6em;
-        height: 2em;
-    }
-
-    .wrap .alt-text .message .message-text {
-        grid-row: 2;
-        padding-top: 2.5em;
-    }
-
-
 }
 
 .wrap .alt-text .message .message-text {
     user-select: none;
     float: left;
     height: 1.5em;
-}
-
-@media (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-    .wrap .alt-text .message .message-content {}
-
-    .wrap .alt-text .message .spinner-box {
-        padding-left: 50em;
-    }
-
-
 }
 
 .no-js .prog {
@@ -2219,7 +2192,7 @@ body {
 .spinner-box {
     position: relative;
     float: right;
-    font-size: 20pt;
+    font-size: 40pt;
     text-shadow: none;
 }
 
@@ -2295,7 +2268,7 @@ body {
 
 .l-spin-text span,
 .l-dummy-text span {
-    padding-top: 3.4em;
+    padding-top: 3.6em;
 }
 
 .m-spinner,
@@ -2331,7 +2304,7 @@ body {
 
 .m-spin-text span,
 .m-dummy-text span {
-    padding-top: 2.6em;
+    padding-top: 2.4em;
 }
 
 .s-spinner,
@@ -4101,43 +4074,16 @@ body {
 
 .wrap .alt-text .message .message-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     margin: auto;
     width: 12em;
     height: 1em;
-}
-
-@media only screen and (max-width: 730px) {
-    .wrap .alt-text .message .message-content {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        width: 6em;
-        height: 2em;
-    }
-
-    .wrap .alt-text .message .message-text {
-        grid-row: 2;
-        padding-top: 2.5em;
-    }
-
-
 }
 
 .wrap .alt-text .message .message-text {
     user-select: none;
     float: left;
     height: 1.5em;
-}
-
-@media (-ms-high-contrast: none),
-(-ms-high-contrast: active) {
-    .wrap .alt-text .message .message-content {}
-
-    .wrap .alt-text .message .spinner-box {
-        padding-left: 50em;
-    }
-
-
 }
 
 .no-js .prog {
