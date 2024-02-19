@@ -11,18 +11,26 @@
     <link href="all.css" rel="stylesheet">
 
 <style>
+    #bobwrap {
+        display: grid;
+        height: 100vh;
+    }
+
     #bob{
-        font-size: 6em;
+        align-self: center;
+        font-size: 5.5em;
     color: white;
     position: absolute;
     padding-left: 1em;
-    bottom: 1em;
+    /* bottom: 1em; */
     }
 </style>
 </head>
 
 <body id="main">
-    <div id="bob" contenteditable>Messages:</div>
+    <div id="bobwrap">
+        <div id="bob" contenteditable>Messages:</div>
+    </div>
     <div id="shell" class="wrap">
         <div class="alt-text">
             <div class="message">
